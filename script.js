@@ -7,7 +7,7 @@ function checkForAstronauts(button) {
     button.style.display = "none"; // hide button
 
     //fetch('https://api.open-notify.org/astros.json') // vercel blocks http insecure
-    fetch('/ex-json/astros.json')
+    fetch('astros.json')
         .then(response => {
             return response.json();
         })
